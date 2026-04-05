@@ -1,5 +1,7 @@
 include(FetchContent)
 
+set(gtest_force_shared_crt ON)
+
 FetchContent_Declare(
   googletest
   GIT_REPOSITORY https://github.com/google/googletest.git
