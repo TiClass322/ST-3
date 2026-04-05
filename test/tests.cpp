@@ -68,10 +68,10 @@ TEST_F(TimedDoorTest, ThrowStateThrowsExceptionWithCorrectMessage) {
 
 TEST_F(TimedDoorTest, UnlockTwiceThenLock) {
     door->unlock();
-    door->unlock(); 
-    door->lock();   
+    door->unlock();
+    door->lock();
     std::this_thread::sleep_for(std::chrono::seconds(timeout + 1));
-    ASSERT_FALSE(door->isDoorOpened()); 
+    ASSERT_FALSE(door->isDoorOpened());
 }
 
 
